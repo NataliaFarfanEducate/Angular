@@ -1,0 +1,50 @@
+/* Estilos Globales */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Verdana, Arial, sans-serif;  color: #000;
+}
+
+p {
+  padding: 1rem;
+  margin: 1.5rem;
+  border-radius: 5px;
+  color: #000000; 
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.interpolar{
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 15px;
+}
+.card-header, .card-footer{
+  background: linear-gradient(120deg, #d8bda6, #ef8f8f);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.evento .propiedad{
+  border: 1px solid #e0e0e0;
+  background-color: #e9a1a1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

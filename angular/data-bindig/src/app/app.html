@@ -1,4 +1,7 @@
 <app-header></app-header>
+<div class="card-header bg-primary text-white">
+      <h2 class="mb-0">Interpolación de Datos</h2>
+    </div>
 <main class="container">
   <section class="interpolar">
     <P>La interpolación de datos: se declaran propiedades o atributos y mediante el doble mostachos se coloca el valor</P>
@@ -8,13 +11,16 @@
     <p>Se pasa valores a los atributos de las etiquetas en el template</p>
     <input type="number" name="" id="edad" [value]="edad">
   </section>
-  <section>
-    <button (click)="getEvento()">Evento Click</button>
+  <section class="evento">
+    <button class="btn-click" (click)="getEvento()">Evento Click</button>
   </section>
-  <div>
+  <div class="form-group">
     <label for="name">nombre:</label>
     <input type="text" name="name" id="name" [(ngModel)]="nombre"><br>
     <p>El nombre es: {{nombre}}</p>
   </div>
 </main>
+<div class="card-footer bg-primary text-white">
+      <h2 class="mb-0">Todos los derechos reservados</h2>
+    </div>
 <app-footer></app-footer>
