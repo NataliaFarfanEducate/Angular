@@ -1,0 +1,10 @@
+h1 {
+  background: linear-gradient(50deg, #d130a6, #2ddcb9);
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

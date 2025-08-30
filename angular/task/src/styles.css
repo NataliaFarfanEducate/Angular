@@ -1,0 +1,25 @@
+/* Importar Bootstrap */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* ======= GLOBAL STYLES ======= */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fbf0f7; /* Color de fondo claro */
+  color: #212529; /* Texto principal */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
