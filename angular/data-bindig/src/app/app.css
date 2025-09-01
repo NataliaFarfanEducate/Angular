@@ -1,11 +1,14 @@
 /* Estilos Globales */
 main {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   font-family: Verdana, Arial, sans-serif;  color: #000;
+  display: flex;
+  flex-direction: row; /* por defecto ya es row, pero lo aclaramos */
+  gap: 10px;
 }
 
-p {
+p, label {
   padding: 1rem;
   margin: 1.5rem;
   border-radius: 5px;
@@ -14,10 +17,13 @@ p {
   line-height: 1.6;
 }
 
-.interpolar{
+.interpolar, .propiedad, .nombreForm{
+  width: 70%;
+  height: auto;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
@@ -33,13 +39,13 @@ p {
   text-align: center;
 }
 
-.evento .propiedad{
+/*.evento {
   border: 1px solid #e0e0e0;
   background-color: #e9a1a1;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .form-group {
   margin-bottom: 1rem;

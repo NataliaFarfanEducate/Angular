@@ -3,22 +3,25 @@
       <h2 class="mb-0">Interpolación de Datos</h2>
     </div>
 <main class="container">
+
   <section class="interpolar">
-    <P>La interpolación de datos: se declaran propiedades o atributos y mediante el doble mostachos se coloca el valor</P>
+    <P>La interpolación de datos: se declaran propiedades o atributos y mediante el doble 
+      mostacho se coloca el valor</P>
     <P>{{getData()}}</P>
   </section>
+
   <section class="propiedad">
     <p>Se pasa valores a los atributos de las etiquetas en el template</p>
-    <input type="number" name="" id="edad" [value]="edad">
-  </section>
-  <section class="evento">
+    <input type="number" name="" id="edad" [value]="edad"><br> <br>
     <button class="btn-click" (click)="getEvento()">Evento Click</button>
+
   </section>
-  <div class="form-group">
-    <label for="name">nombre:</label>
-    <input type="text" name="name" id="name" [(ngModel)]="nombre"><br>
+
+  <section class="nombreForm">
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" id="name" [(ngModel)]="nombre">
     <p>El nombre es: {{nombre}}</p>
-  </div>
+  </section>
 </main>
 <div class="card-footer bg-primary text-white">
       <h2 class="mb-0">Todos los derechos reservados</h2>
