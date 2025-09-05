@@ -1,0 +1,14 @@
+<section>
+  <h2>*ngSwitch</h2>
+  <select [(ngModel)]="estado" class="form-select">
+    <option value="aprobado">Aprobado</option>
+    <option value="rechazado">Rechazado</option>
+    <option value="pendiente">Pendiente</option>
+  </select>
+</section>
+<div [ngSwitch]="estado">
+  <p *ngSwitchCase="'aprobado'">Estado: Aprobado</p>
+  <p *ngSwitchCase="'rechazado'">Estado: Rechazado</p>
+  <p *ngSwitchDefault>Estado: Pendiente</p>
+
+</div>

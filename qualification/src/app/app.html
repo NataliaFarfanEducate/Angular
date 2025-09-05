@@ -1,0 +1,31 @@
+<app-header></app-header>
+<main>
+<h1>Notas Uniempresarial</h1>
+<section>
+  <label for="qua" class="form-label">Nota:</label>
+  <input type="number" id="qua" class="form-control" [value]="qualification"><br>
+  <button class="btn btn-danger" (click)="qualification=qualification+1">+</button>
+  <button class="btn btn-primary" (click)="qualification=qualification-1">-</button>
+</section><br>
+<section>
+  <p>Resultado:</p>
+  <p *ngIf = "qualification>=5 && qualification<=10">Nota Aprobada</p>
+  <p *ngIf = "qualification<5 && qualification>=0">Nota NO Aprobada</p>
+  <p *ngIf = "qualification>10">Nota Fuera de Rango</p>
+</section>
+<section>
+  <h2>*ngSwitch</h2>
+  <select [(ngModel)]="estado" class="form-select">
+    <option value="aprobado">Aprobado</option>
+    <option value="rechazado">Rechazado</option>
+    <option value="pendiente">Pendiente</option>
+  </select>
+</section>
+<div [ngSwitch]="estado">
+  <p *ngSwitchCase="'aprobado'">Estado: Aprobado</p>
+  <p *ngSwitchCase="'rechazado'">Estado: Rechazado</p>
+  <p *ngSwitchDefault>Estado:Pendiente</p>
+
+</div>
+</main>
+<app-footer></app-footer>
