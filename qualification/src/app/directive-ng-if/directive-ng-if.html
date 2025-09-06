@@ -1,3 +1,14 @@
-<p>prueba</p>
-  <h2>*ngIf</h2>
-  <div id="msg"></div>
+<main class="container">
+<section class="container-if">
+  <label for="qua" class="form-label">Nota:</label>
+  <input type="number" id="qua" class="form-control" [value]="qualification"><br>
+  <button class="btn" (click)="qualification=qualification+1">+</button>
+  <button class="btn" (click)="qualification=qualification-1">-</button>
+</section>
+<section class="resultado-if">
+  <p>Resultado:</p>
+  <p *ngIf = "qualification>=5 && qualification<=10">Nota Aprobada</p>
+  <p *ngIf = "qualification<5 && qualification>=0">Nota NO Aprobada</p>
+  <p *ngIf = "qualification>10 || qualification<0">Nota Fuera de Rango</p>
+</section>
+</main>

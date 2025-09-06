@@ -1,4 +1,10 @@
-<p>directive-ng-for works!</p>
-
-<h2>*ngFor</h2>
-  <ul id="lista"></ul>
+<main class="container">
+  <section class="container-for">
+    <label class="materias">Selecciona una materia:</label>
+    <select id="materia" class="form-select" [value]="materiaSeleccionada" (change)="onMateriaChange($event)">
+      <option *ngFor="let materia of materias" [value]="materia">
+        {{ materia }}
+      </option>
+    </select><br>
+  </section>
+</main>

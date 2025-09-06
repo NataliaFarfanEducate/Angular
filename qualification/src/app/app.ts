@@ -1,21 +1,17 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Header } from "./header/header";
 import { Footer } from "./footer/footer";
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { DirectiveNgSw } from './directive-ng-sw/directive-ng-sw';
+import { DirectiveNgIf } from './directive-ng-if/directive-ng-if';
+import { DirectiveNgFor } from './directive-ng-for/directive-ng-for';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, CommonModule, FormsModule],
+  imports: [Header, DirectiveNgSw, DirectiveNgIf, Footer, DirectiveNgFor],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('qualification');
-  protected qualification: number;
-  constructor() {
-    this.qualification = -1;
-  }
-  estado:string = 'pendiente';
+  materiaSeleccionada:string ='Matematicas';
+  qualification: number = 0;
 }
