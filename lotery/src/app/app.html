@@ -1,17 +1,17 @@
+<h1>Lotería</h1>
 <main>
-  <h1>Lotería</h1>
-  <section>
+  <section class="jugar-balota">
     <app-balota [valor]="valor1"></app-balota>
     <app-balota [valor]="valor2"></app-balota>
     <button (click)="jugar()">Jugar</button>
-    <p>
+    <p class="numero">
       {{numeroGandor}}
     </p>
   </section>
   <hr>
-  <section>
+  <section class="parImpar">
     <app-par-inpar [valor]="suma" (parImpar)="getParImpar($event)" ></app-par-inpar>
-    <div>{{mensaje}}</div>
+    <p class="mensaje">{{mensaje}}</p>
   </section>
 </main>
 <router-outlet />

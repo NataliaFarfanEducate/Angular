@@ -1,0 +1,33 @@
+
+main {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+h1{
+  color: #fff;
+  background-color: #000;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.jugar-balota, .parImpar {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0, 0.3);
+}
+
+
+.numero, .mensaje {
+  font-size: 20px;
+  color: #000000;
+}
