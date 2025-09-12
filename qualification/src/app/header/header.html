@@ -1,13 +1,1 @@
 <main><p>Notas Uniempresarial</p></main><br>
-
-<section class="slider">
-    <h2>Directiva estructural en Angular</h2>
-    <div class="card" > 
-        <div *ngFor="let seccion of secciones; let i = index" [class.active]="i === indiceActual">
-            <h3>{{seccion.titulo}}</h3>
-            <p>{{ seccion.descripcion }}</p><br>
-        </div>
-    </div>
-    <button (click)="anterior()">Anterior</button>
-    <button (click)="siguiente()">Siguiente</button>
-</section>
