@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Balota } from './balota/balota';
 import { ParInpar } from './par-inpar/par-inpar';
+import { Header } from './header/header';
+import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Balota, ParInpar],
+  imports: [RouterOutlet, Balota, ParInpar, Header, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

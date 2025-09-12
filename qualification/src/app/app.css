@@ -1,3 +1,13 @@
+.todos{
+  max-width: 50%;
+  height: max-content;
+    margin: 20px auto;
+  border-radius: 50px;
+  box-shadow: 20px 20px 20px 20px #00000033;
+  border: 1px solid #ddd;
+  background: white;
+  padding: 2%;
+}
 
 .slider {
   max-width: 600px;

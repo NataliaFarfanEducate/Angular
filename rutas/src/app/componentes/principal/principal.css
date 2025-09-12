@@ -1,0 +1,9 @@
+section{
+    background-color: brown;
+    color: white;
+    padding: 5%;
+    border: 2px solid black;
+}
+p {
+    font-size: 20px;
+}
